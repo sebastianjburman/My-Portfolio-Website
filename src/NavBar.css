@@ -1,0 +1,102 @@
+
+/*Whole nav bar*/
+
+.NavBarDiv{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+
+}
+.nameLogo{
+    position: absolute;
+    left: 20px;
+    top: 4.5px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+.homeButton{
+    height:50%;
+    color: white;
+    background-color: transparent;
+    margin-right: 10px;
+    font-size:1rem;
+    border: none;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+.homeButton:hover{
+    background-color: white;
+}
+.portfolioButton{
+    height:50%;
+    color: white;
+    background-color: transparent;
+    margin-right: 10px;
+    font-size:1rem;
+    border: none;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+.aboutMeButton{
+    height:50%;
+    color: white;
+    background-color: transparent;
+    margin-right: 10px;
+    font-size:1rem;
+    border: none;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+.contactButton{
+    height:50%;
+    color: white;
+    background-color: transparent;
+    margin-right: 10px;
+    font-size:1rem;
+    border: none;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+/* Drop Down Menu Button*/
+
+.menuLogo{
+    display: none;
+    position: absolute;
+    right: 10px;
+    height: 80%;
+    background-color: transparent;
+    border: none;
+    z-index: 1001;
+}
+.dropDownIconImage{
+    pointer-events: none;
+}
+
+
+@media only screen and (max-width: 711px) {
+  .menuLogo{
+      display:block;
+  }
+  .homeButton{
+      display: none;
+  }
+  .portfolioButton{
+      display: none;
+  }
+  .aboutMeButton{
+      display: none;
+  }
+  .contactButton{
+      display: none;
+  }
+}

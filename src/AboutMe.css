@@ -1,0 +1,77 @@
+.aboutMeContainer{
+    position: absolute;
+    top: 15%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+/* Fade in aboutMe div */
+    opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+/* Fade in aboutMe div */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.aboutMeContainer h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.aboutMeParagraphContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    border-radius: 14px;
+    width: 80%;
+    max-width: 665px;
+}
+    
+.aboutMeParagraph {
+    width: 80%;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.skillsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    border-radius: 14px;
+    width: 80%;
+    max-width: 665px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 711px) {
+/*Make div fill most of mobile screen when smaller*/
+  .aboutMeParagraphContainer{
+      width: 90%;
+  }
+  .skillsContainer{
+      width: 90%;
+  }
+  /*move content up when screen shrink fill open space*/
+  .aboutMeContainer{
+      top: 10%;
+  }
+}
+
+

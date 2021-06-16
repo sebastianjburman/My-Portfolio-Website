@@ -1,0 +1,48 @@
+.portfolioContainer{
+    position: absolute;
+    top: 15%;
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* Fade in Portfolio div */
+    opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+ /* Fade in Portfolio div */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/*move content up when screen shrink fill open space*/
+@media only screen and (max-width: 711px) {
+  .portfolioContainer{
+      top: 10%;
+  }
+}
+
+
+
+.portfolioContainer h1{
+    color: white;
+    text-align: center;
+}
+
+.allProjectsContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
