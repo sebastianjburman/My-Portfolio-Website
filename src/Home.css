@@ -69,8 +69,8 @@
     border-color: #d75474;
     border-width: 2px;
     background-color: transparent;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 }
 .viewWorkResumeButtonContainer button:hover{
     background-color: #d75474;

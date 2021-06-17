@@ -242,8 +242,8 @@ inputs into 100% of parent div*/
     color: white;
     font-family: sans-serif;
     background-color: transparent;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 }
 
 .sendButton:hover{
