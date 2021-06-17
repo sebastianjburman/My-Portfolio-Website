@@ -18,11 +18,11 @@ function AboutMe() {
             <h1>About Me</h1>
             <div className = "aboutMeParagraphContainer">
                 <p className = "aboutMeParagraph">
-                I'm a front-end web developer who loves creating complex UI. 
-                Currently, I am attending Indiana University Southeast and getting 
-                my bachelor's in computer science. I am passionate about coding 
-                and solving problems.  I am excited to work with other 
-                amazing programmers and learn so much more!
+                    I'm a front-end web developer who loves creating complex UI. 
+                    Currently, I am attending Indiana University Southeast and pursuing 
+                    my bachelor's in computer science. I am passionate about coding and 
+                    solving problems. I am excited to work with other amazing programmers 
+                    and learn so much more!
                 </p>
             </div>
             <h1>Skills</h1>

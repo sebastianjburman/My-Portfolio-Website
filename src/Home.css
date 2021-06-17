@@ -42,12 +42,14 @@
     color: white;
     font-size: 2rem;
     width: 90%;
+    font-family: sans-serif;
 }
 .homeParagraph {
     text-align: center;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 80%;
+    font-family: sans-serif;
 }
 .viewWorkResumeButtonContainer{
     display: flex;
