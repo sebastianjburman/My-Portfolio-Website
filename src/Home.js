@@ -35,7 +35,7 @@ function Home(props) {
             <h2>Recent Projects</h2>
             <div className = "recentProjects">
                 {/*Map through all my project newest first and create a card for last 4 projects*/}
-                {props.allProjects.reverse().slice(0,4).map(x=>{
+                {props.allProjects.slice(0, 4).reverse().map(x=>{
                     return <ProjectCard name = {x.name}
                     photo = {x.photo} paragraph = {x.paragraph}
                     website = {x.website} githubUrl = {x.githubUrl}></ProjectCard>
