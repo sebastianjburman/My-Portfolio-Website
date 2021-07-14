@@ -10,6 +10,7 @@ import DropDownMenu from "./DropDownMenu"
 //All Project images
 import reactCalImg from "./reactCalculatorImg.png"
 import weatherAppImg from "./weatherapp.png"
+import pizzaWebsiteImg from "./pizzaWebsiteImg.png"
 
 
 //All my projects as objects
@@ -23,7 +24,13 @@ const allProjects = [{
     paragraph: "A simple react weather app using the open weather api.",
   website: "https://sebastianweatherapp.netlify.app/",
   githubUrl: "https://github.com/sebastianjburman/React-Weather-App"
-  }]
+  },{
+    name: "Pizza Website", photo: pizzaWebsiteImg,
+    paragraph: "A simple pizza website made with react.",
+  website: "https://websitepizza.netlify.app/",
+  githubUrl: "https://github.com/sebastianjburman/Pizza-Website"
+  }
+]
 
 
 function App() {
