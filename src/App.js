@@ -1,37 +1,14 @@
 import './App.css';
-import NavBar from "./NavBar"
+import NavBar from "./Components/Navbar/NavBar"
 import { useState } from "react"
-import Home from "./Home"
-import Portfolio from "./Portfolio"
-import AboutMe from "./AboutMe"
-import Contact from "./Contact"
-import DropDownMenu from "./DropDownMenu"
+import Home from "./Pages/HomePage/Home"
+import Portfolio from "./Pages/PortfolioPage/Portfolio"
+import AboutMe from "./Pages/AboutMePage/AboutMe"
+import Contact from "./Pages/ContactPage/Contact"
+import DropDownMenu from "./Components/DropDownMenu/DropDownMenu"
 
-//All Project images
-import reactCalImg from "./reactCalculatorImg.png"
-import weatherAppImg from "./weatherapp.png"
-import pizzaWebsiteImg from "./pizzaWebsiteImg.png"
-
-
-//All my projects as objects
-const allProjects = [{
-  name: "Calculator", photo: reactCalImg,
-  paragraph: "A simple calculator built with react state.",
-  website: null,
-  githubUrl: "https://github.com/sebastianjburman/Simple-React-Calculator"
-}, {
-    name: "Weather App", photo: weatherAppImg,
-    paragraph: "A simple react weather app using the open weather api.",
-  website: "https://sebastianweatherapp.netlify.app/",
-  githubUrl: "https://github.com/sebastianjburman/React-Weather-App"
-  },{
-    name: "Pizza Website", photo: pizzaWebsiteImg,
-    paragraph: "A simple pizza website made with react.",
-  website: "https://websitepizza.netlify.app/",
-  githubUrl: "https://github.com/sebastianjburman/Pizza-Website"
-  }
-]
-
+//All Projects
+import allProjects from './AllProjectObjects';
 
 function App() {
   const [view, setView] = useState("home")

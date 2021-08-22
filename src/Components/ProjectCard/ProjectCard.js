@@ -1,7 +1,6 @@
 import React from 'react';
 import "./ProjectCard.css"
-import githubIcon from "./githubicon.svg"
-import reactCalImg from "./reactCalculatorImg.png"
+import githubIcon from "../../Svgs/githubicon.svg"
 
 function ProjectCard(props) {
     return (

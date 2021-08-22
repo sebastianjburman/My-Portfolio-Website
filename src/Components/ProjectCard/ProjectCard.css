@@ -38,10 +38,10 @@
     display: none;
     height: 400px;
     width: 300px;
-    background-color: #232f46;
+    background-color: #4C9298;
     border-radius: 14px;
     z-index: 1000;
-    border: solid #232f46;
+    border: solid #4C9298;
     border-width: 1px;
     justify-content: center;
     align-items: center;
@@ -101,13 +101,13 @@
     text-align: center;
     font-size: 1.1rem;
     background-color: transparent;
-    border-color: #d75474;
+    border-color: #55C4AE;
     border-width: 2px;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
 }
 .visitWebsiteLink:hover{
-    background-color: #d75474;
+    background-color: #55C4AE;
 }
 
 

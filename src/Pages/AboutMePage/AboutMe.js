@@ -1,16 +1,16 @@
 import React from 'react';
 import "./AboutMe.css";
-import SkillCard from './SkillCard';
+import SkillCard from '../../Components/SkillCard/SkillCard';
 
 //Import svgs for skills div
-import htmlSvg from "./html.svg"
-import javascriptSvg from "./javascript.svg"
-import reactSvg from "./react.svg"
-import firebaseSvg from "./firebase.svg"
-import vscodeSvg from "./vscode.svg"
-import macPng from "./mac.png"
-import cssSvg from "./css.svg"
-import gitSvg from "./git.svg"
+import htmlSvg from "../../Svgs/html.svg"
+import javascriptSvg from "../../Svgs/javascript.svg"
+import reactSvg from "../../Svgs/react.svg"
+import firebaseSvg from "../../Svgs/firebase.svg"
+import vscodeSvg from "../../Svgs/vscode.svg"
+import macPng from "../../Images/mac.png"
+import cssSvg from "../../Svgs/css.svg"
+import gitSvg from "../../Svgs/git.svg"
 
 function AboutMe() {
     return (

@@ -1,15 +1,15 @@
 import React from 'react';
 import "./NavBar.css"
-import nameLogo from "./nameLogo.png"
-import dropDownSvg from "./dropDown.svg"
-import deleteDropDownIcon from "./delete.svg"
+import nameLogo from "../../Images/nameLogo.png"
+import dropDownSvg from "../../Svgs/dropDown.svg"
+import deleteDropDownIcon from "../../Svgs/delete.svg"
 
 
 function NavBar(props) {
 
     //Hover topnav button based on what page user is on
     const hoverViewBackGround = (currentView, pageState) => {
-        let color = (currentView === pageState) ? "rgb(215,84,116)" :"transparent"
+        let color = (currentView === pageState) ? "#55C4AE" :"transparent"
         return color
     }
     //Change topnav button color based what page user is on

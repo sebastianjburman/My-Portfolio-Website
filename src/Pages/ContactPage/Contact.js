@@ -1,6 +1,6 @@
 import {React, useState} from 'react';
 import "./Contact.css"
-import mailIcon from "./mail.svg"
+import mailIcon from "../../Svgs/mail.svg"
 import emailjs from 'emailjs-com';
 
 function Contact(props) {

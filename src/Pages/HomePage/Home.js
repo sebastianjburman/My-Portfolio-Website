@@ -1,10 +1,9 @@
 import React from 'react';
 import "./Home.css"
-import sebastianImage from "./sebastian.png"
-import ProjectCard from "./ProjectCard"
+import sebastianImage from "../../Images/sebastian.png"
+import ProjectCard from "../../Components/ProjectCard/ProjectCard"
 
 
-                    
 function Home(props) {
     return (
         <div className = "homeDiv">
