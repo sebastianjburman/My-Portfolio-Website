@@ -11,7 +11,7 @@ function Portfolio(props) {
                 {/*Map through all my project newest first and create a card for each project*/}
                 {/*Create a copy of props array so im able to reverse it*/}
                 {[...props.allProjects].reverse().map(x => {
-                    return <ProjectCard name={x.name}
+                    return <ProjectCard name={x.name} key={x.projectId}
                         photo={x.photo} paragraph={x.paragraph}
                         website={x.website} githubUrl={x.githubUrl}></ProjectCard>
                 })}

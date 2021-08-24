@@ -21,7 +21,7 @@ function NavBar(props) {
 
     return (
         <div className = "NavBarDiv">
-            <img className="nameLogo" src={nameLogo} onClick={() => { props.setView("home") }}></img>
+            <img  className="nameLogo" src={nameLogo} alt = "Navbar Logo" onClick={() => { props.setView("home") }}></img>
             <button className = "homeButton" onClick={() => { props.setView("home") }} 
                 style={{ color: hoverViewColor(props.view, "home"), 
                 backgroundColor: hoverViewBackGround(props.view, "home")}}>Home
@@ -46,9 +46,9 @@ function NavBar(props) {
                 
             <button className = "menuLogo" onClick = {()=>props.activateDropDown()}>
                 {/*Based on dropdown menu state prop the icon changes*/}
-                {(props.dropDown === true) ? <img src={deleteDropDownIcon} 
+                {(props.dropDown === true) ? <img alt = "deleteIcon" src={deleteDropDownIcon} 
                 className= "dropDownIconImage"></img>
-                    : <img src={dropDownSvg} className="dropDownIconImage"></img>}
+                    : <img src={dropDownSvg} className="dropDownIconImage" alt = "dropDownIcon"></img>}
             </button>    
         </div>
     );

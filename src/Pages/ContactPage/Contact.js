@@ -42,7 +42,7 @@ function Contact(props) {
                 <h1>Get in Touch</h1>
                 <div className = "emailMeContainer">
                     <div className = "mailIconContainer">
-                        <img src = {mailIcon}></img>
+                        <img alt = "mailIcon" src = {mailIcon}></img>
                     </div>
                     <a href="mailto: sebastianjburman@gmail.com">sebastianjburman@gmail.com</a>
                     <p>EMAIL ME</p>
