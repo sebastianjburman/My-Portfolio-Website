@@ -9,8 +9,6 @@ function Home(props) {
         <div className = "homeDiv">
             <img  className = "sebastianImage" alt = "photoOfSebastian" src = {sebastianImage}></img>
             <h1>I am Sebastian Burman.</h1>
-            <p className = "homeParagraph">I am a front-end developer. I mainly use react js but I 
-            like trying out various new front-end technologies.</p>
             <div className = "viewWorkResumeButtonContainer">
                 <button onClick = {()=>props.setView("portfolio")}>View My Work</button>
                 <button onClick = {()=>alert("Coming Soon")}>Resumé</button>

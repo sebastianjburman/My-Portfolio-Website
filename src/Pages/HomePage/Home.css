@@ -43,13 +43,6 @@
     width: 90%;
     font-family: sans-serif;
 }
-.homeParagraph {
-    text-align: center;
-    color: white;
-    font-size: 1.3rem;
-    width: 80%;
-    font-family: sans-serif;
-}
 .viewWorkResumeButtonContainer{
     display: flex;
     flex-wrap: wrap;
