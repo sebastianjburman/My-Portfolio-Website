@@ -28,7 +28,7 @@ const allProjects = [{
 {
     name: "Flappy Bird Clone", photo: flappyBirdCloneImg,
     projectId: "md4dk3",
-    paragraph: "Flappy bird clone created in java using libgdx. Click r to respawn.",
+    paragraph: "Flappy bird clone created in java using libgdx.",
     website: null,
     githubUrl: "https://github.com/sebastianjburman/Flappy-Bird_Clone"
 }
