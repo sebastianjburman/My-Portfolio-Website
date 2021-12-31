@@ -20,7 +20,7 @@ function AboutMe() {
             <h1>About Me</h1>
             <div className="aboutMeParagraphContainer">
                 <p className="aboutMeParagraph">
-                    I'm a developer who loves solving complex issues. Currently, I am attending Indiana University Southeast and pursuing my bachelor's in computer science. I am passionate about coding and solving problems. I'm excited to work with other programmers and learn so much more!
+                    I'm a developer who loves solving complex issues. Currently, I am attending Indiana University Southeast and pursuing my bachelor's in computer science. I am passionate about coding and solving problems. I'm excited to work with other programmers and to learn new skills and tools!
                 </p>
             </div>
             <h1>Skills</h1>
