@@ -1,114 +1,134 @@
-.homeDiv{
-    position: absolute;
-    top: 15%;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
+.homeDiv {
+  position: absolute;
+  top: 15%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
 
-   /* Fade in home div */
-    opacity: 1;
-	animation-name: fadeIn;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
+  /* Fade in home div */
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
 }
 /* Fade in home div */
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.sebastianImage{
-    width: 300px;
-    height: 300px;
-    border-radius: 60%;
-    pointer-events: none;
+.sebastianImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 60%;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 370px) {
-  .sebastianImage{
-      width: 90%;
+  .sebastianImage {
+    width: 90%;
   }
 }
-.homeDiv h1{
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-    width: 90%;
-    font-family: sans-serif;
+.homeDiv h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  width: 90%;
+  font-family: sans-serif;
 }
-.viewWorkResumeButtonContainer{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 3%;
-    align-items: center;
-    justify-content: center;
+.viewWorkResumeButtonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  align-items: center;
+  justify-content: center;
 }
-.viewWorkResumeButtonContainer button{ 
-    width: 145px;
-    height: 40px;
-    font-size: 1rem;
-    max-width: 150px;
-    margin: 7px;
-    margin-bottom: 3%;
-    color: white;
-    border-radius: 15px;
-    border: solid;
-    border-color: #55C4AE;
-    border-width: 2px;
-    background-color: transparent;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
+.viewWorkResumeButtonContainer button {
+  width: 145px;
+  height: 40px;
+  font-size: 1rem;
+  max-width: 150px;
+  margin: 7px;
+  margin-bottom: 3%;
+  color: white;
+  border-radius: 15px;
+  border: solid;
+  border-color: #55c4ae;
+  border-width: 2px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
-.viewWorkResumeButtonContainer button:hover{
-    background-color: #55C4AE;
-
+.viewWorkResumeButtonContainer button:hover {
+  background-color: #55c4ae;
+}
+.resumeLink {
+  width: 141px;
+  height: 36px;
+  font-size: 1rem;
+  max-width: 150px;
+  margin: 7px;
+  margin-bottom: 3%;
+  color: white;
+  border-radius: 15px;
+  border: solid;
+  border-color: #55c4ae;
+  border-width: 2px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.resumeLink:hover {
+  background-color: #55c4ae;
 }
 
 /* Icon Container holding svg images */
-.iconContainer{
-    display: flex;
-    margin-top: 3%;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-    width: 60px;
-    
+.iconContainer {
+  display: flex;
+  margin-top: 3%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
 }
 
-.iconContainer svg{
-    fill: white;
+.iconContainer svg {
+  fill: white;
 }
-.iconContainer svg:hover{
-    fill: rgb(184, 184, 184);
-}
-
-.homeDiv h2{
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    width: 90%;
+.iconContainer svg:hover {
+  fill: rgb(184, 184, 184);
 }
 
-.recentProjects{
-    position: relative;
-    left: 1%;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+.homeDiv h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  width: 90%;
+}
+
+.recentProjects {
+  position: relative;
+  left: 1%;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*move content up when screen shrink fill open space*/
 @media only screen and (max-width: 711px) {
-  .homeDiv{
-      top: 10%;
+  .homeDiv {
+    top: 10%;
   }
 }
-

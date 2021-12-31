@@ -14,28 +14,28 @@ function App() {
   const [view, setView] = useState("home")
   const [dropDown, setDropDown] = useState(false)
 
-  //diffrent component based on state change
-  const currentView = ()=>{
+  //Diffrent component based on state change
+  const currentView = () => {
     if (view === "home") {
-      return <Home setView={setView} allProjects = {allProjects}></Home>
+      return <Home setView={setView} allProjects={allProjects}></Home>
     }
     else if (view === "portfolio") {
       return <Portfolio allProjects={allProjects}></Portfolio>
     }
     else if (view === "aboutme") {
-      return <AboutMe></AboutMe>   
+      return <AboutMe></AboutMe>
     }
-    else if (view === "contact"){
+    else if (view === "contact") {
       return <Contact></Contact>
     }
   }
 
   //show dropDown if state is true
-  const dropDownView = ()=>{
+  const dropDownView = () => {
     if (dropDown === true) {
-      return <DropDownMenu setView = {setView} setDropDown = {setDropDown}
+      return <DropDownMenu setView={setView} setDropDown={setDropDown}
       ></DropDownMenu>
-      
+
     }
   }
 
@@ -43,13 +43,13 @@ function App() {
   return (
     <div className="App">
       {dropDownView()}
-      <NavBar setView = {setView} view = {view}
-      activateDropDown = {()=>setDropDown(!dropDown)}
-      dropDown={dropDown}
+      <NavBar setView={setView} view={view}
+        activateDropDown={() => setDropDown(!dropDown)}
+        dropDown={dropDown}
       ></NavBar>
       {currentView()}
-      
-      
+
+
     </div>
   );
 }

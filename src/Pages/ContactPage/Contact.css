@@ -1,252 +1,238 @@
-.contactContainer{
-    position: absolute;
-    top: 15%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 100%;
-    width: 100%;
-    
+.contactContainer {
+  position: absolute;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 100%;
+  width: 100%;
 
-    /* Fade in contact div */
-    opacity: 1;
-	animation-name: fadeIn;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
+  /* Fade in contact div */
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
 }
 
 /*move content up when screen shrink fill open space*/
 @media only screen and (max-width: 711px) {
-  .contactContainer{
-      top: 10%;
+  .contactContainer {
+    top: 10%;
   }
 }
 /* Fade in contact div */
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.contactFormContainer{
-    width: 85%;
-    max-width: 744px;
-    background-color: transparent; 
-    display: flex;
-    align-items: center;
-    flex-direction: column;   
+.contactFormContainer {
+  width: 85%;
+  max-width: 744px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.contactFormContainer h1{
-    color: white;
-    font-size: 2.3rem;
-    text-align: center;
-    font-family: sans-serif;
+.contactFormContainer h1 {
+  color: white;
+  font-size: 2.3rem;
+  text-align: center;
+  font-family: sans-serif;
 }
 
-.emailMeContainer{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    height: 160px;
-    min-width: 255px;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
-    border-radius: 14px;
-    font-size: 100%;
+.emailMeContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 160px;
+  min-width: 255px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 14px;
+  font-size: 100%;
 }
 
 /* Stretch email container when in mobile view */
 @media only screen and (max-width: 500px) {
-  .emailMeContainer{
+  .emailMeContainer {
     width: 110%;
   }
 }
 
-.mailIconContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    background-color: #55C4AE;
-    border-radius: 14px;
-    margin-top: 10px;
+.mailIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #55c4ae;
+  border-radius: 14px;
+  margin-top: 10px;
 }
 
-.mailIconContainer img{
-    width: 35px;
-    height: 35px;
+.mailIconContainer img {
+  width: 35px;
+  height: 35px;
 }
 
 .emailMeContainer a {
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
 }
 
 .emailMeContainer p {
-    font-size: .8rem;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
-
 /* Blurred transparent box around inputs and button */
-.inputsContainer{
-    width: 80%;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
-    border-radius: 14px;
-    margin-bottom: 30px;
+.inputsContainer {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 14px;
+  margin-bottom: 30px;
 }
 
 /* When screen is mobile sretch contact form*/
 @media only screen and (max-width: 500px) {
-  .inputsContainer{
+  .inputsContainer {
     width: 110%;
   }
 }
 
-.emailForm{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+.emailForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.nameEmailInputContainer{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    margin-top: 20px;
+.nameEmailInputContainer {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-
-.nameInput{
-    width: 45%;
-    height: 33px;
-    font-size: 1rem;
-    font-weight: 600;
-    outline:#55C4AE;
-    color: rgb(51, 51, 51);
-    border: none;
-    font-family: sans-serif;
+.nameInput {
+  width: 45%;
+  height: 33px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  border: none;
+  font-family: sans-serif;
 }
 /* Slow outline transtion */
-.nameInput:focus{
-    transition: outline .4s ease-in;
-    -webkit-transition: all .4s ease;
-    outline:3.5px solid #55C4AE;
+.nameInput:focus {
+  transition: outline 0.4s ease-in;
+  -webkit-transition: all 0.4s ease;
+  outline: 3.5px solid #55c4ae;
 }
-.emailInput{
-    width: 45%;
-    height: 33px;
-    font-size: 1rem;
-    font-weight: 600;
-    outline:#55C4AE;
-    color: rgb(51, 51, 51);
-    border: none;
-    font-family: sans-serif;
+.emailInput {
+  width: 45%;
+  height: 33px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  border: none;
+  font-family: sans-serif;
 }
 
 /* When in mobile responsive width splits name and email 
 inputs into 100% of parent div*/
 
 @media only screen and (max-width: 711px) {
-  .nameEmailInputContainer{
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-  }
-  .nameInput{
-      width: 100%;
-  }
-  .emailInput{
-      width: 100%;
-      margin-top: 20px;
-  }
-}
-
-
-
-/* Slow outline transtion */
-.emailInput:focus{
-    transition: outline .4s ease-in;
-    -webkit-transition: all .4s ease;
-    outline:3.5px solid #55C4AE;
-}
-
-
-
-
-.subjectMessageInputContainer{
-    display: flex;
-    width: 80%;
+  .nameEmailInputContainer {
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+  .nameInput {
+    width: 100%;
+  }
+  .emailInput {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
+/* Slow outline transtion */
+.emailInput:focus {
+  transition: outline 0.4s ease-in;
+  -webkit-transition: all 0.4s ease;
+  outline: 3.5px solid #55c4ae;
+}
 
+.subjectMessageInputContainer {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-.subjectInput{
-    margin-top: 20px;
-    width: 100%;
-    height: 33px;
-    font-size: 1rem;
-    font-weight: 600;
-    outline:#55C4AE;
-    color: rgb(51, 51, 51);
-    border: none;
-    font-family: sans-serif;
+.subjectInput {
+  margin-top: 20px;
+  width: 100%;
+  height: 33px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  border: none;
+  font-family: sans-serif;
 }
 /* Slow outline transtion */
-.subjectInput:focus{
-    transition: outline .4s ease-in;
-    -webkit-transition: all .4s ease;
-    outline:3.5px solid #55C4AE;
+.subjectInput:focus {
+  transition: outline 0.4s ease-in;
+  -webkit-transition: all 0.4s ease;
+  outline: 3.5px solid #55c4ae;
 }
 
-.messageInput{
-    margin-top: 20px;
-    width: 100%;
-    height: 55px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: rgb(51, 51, 51);
-    resize: none;
-    outline:#55C4AE;
-    margin-bottom: 20px;
-    font-family: sans-serif;
+.messageInput {
+  margin-top: 20px;
+  width: 100%;
+  height: 55px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  resize: none;
+  margin-bottom: 20px;
+  font-family: sans-serif;
 }
 /* Slow outline transtion */
-.messageInput:focus{
-    transition: outline .4s ease-in;
-    -webkit-transition: all .4s ease;
-    outline:3.5px solid #55C4AE;
+.messageInput:focus {
+  transition: outline 0.4s ease-in;
+  -webkit-transition: all 0.4s ease;
+  outline: 3.5px solid #55c4ae;
 }
-.sendButton{
-    margin-bottom: 20px;
-    width: 120px;
-    height: 40px;
-    border: solid #55C4AE;
-    border-radius: 11px;
-    border-width: 2px;
-    font-size: 1.1rem;
-    color: white;
-    font-family: sans-serif;
-    background-color: transparent;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
+.sendButton {
+  margin-bottom: 20px;
+  width: 120px;
+  height: 40px;
+  border: solid #55c4ae;
+  border-radius: 11px;
+  border-width: 2px;
+  font-size: 1.1rem;
+  color: white;
+  font-family: sans-serif;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
 
-.sendButton:hover{
-    background-color: #55C4AE;
-    -webkit-appearance: none;
+.sendButton:hover {
+  background-color: #55c4ae;
+  -webkit-appearance: none;
 }

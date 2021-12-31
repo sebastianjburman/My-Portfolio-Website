@@ -5,9 +5,9 @@ import ProjectCard from "../../Components/ProjectCard/ProjectCard"
 
 function Portfolio(props) {
     return (
-        <div className = "portfolioContainer">
-            <h1 className= "allProjects h1">All Projects</h1>
-            <div className= "allProjectsContainer">
+        <div className="portfolioContainer">
+            <h1 className="allProjects h1">All Projects</h1>
+            <div className="allProjectsContainer">
                 {/*Map through all my project newest first and create a card for each project*/}
                 {/*Create a copy of props array so im able to reverse it*/}
                 {[...props.allProjects].reverse().map(x => {
