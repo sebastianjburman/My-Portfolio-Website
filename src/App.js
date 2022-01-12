@@ -27,10 +27,13 @@ function App() {
       {dropDownView()}
       <NavBar activateDropDown={() => setDropDown(!dropDown)} dropDown={dropDown}></NavBar>
       <Routes>
+        <Route path="/" element={<Home allProjects={allProjects}></Home>} />
         <Route path="/home" element={<Home allProjects={allProjects}></Home>} />
         <Route path="/portfolio" element={<Portfolio allProjects={allProjects}></Portfolio>} />
         <Route path="/aboutme" element={<AboutMe></AboutMe>} />
         <Route path="/contact" element={<Contact></Contact>} />
+        <Route path="*" element={<Home allProjects={allProjects}></Home>} />
+
       </Routes>
     </div>
   );
