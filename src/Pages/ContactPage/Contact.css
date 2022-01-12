@@ -73,7 +73,7 @@
   align-items: center;
   width: 60px;
   height: 60px;
-  background-color: #55c4ae;
+  background-color: #458c9e;
   border-radius: 14px;
   margin-top: 10px;
 }
@@ -139,7 +139,7 @@
 .nameInput:focus {
   transition: outline 0.4s ease-in;
   -webkit-transition: all 0.4s ease;
-  outline: 3.5px solid #55c4ae;
+  outline: 3.5px solid #458c9e;
 }
 .emailInput {
   width: 45%;
@@ -173,7 +173,7 @@ inputs into 100% of parent div*/
 .emailInput:focus {
   transition: outline 0.4s ease-in;
   -webkit-transition: all 0.4s ease;
-  outline: 3.5px solid #55c4ae;
+  outline: 3.5px solid #458c9e;
 }
 
 .subjectMessageInputContainer {
@@ -197,7 +197,7 @@ inputs into 100% of parent div*/
 .subjectInput:focus {
   transition: outline 0.4s ease-in;
   -webkit-transition: all 0.4s ease;
-  outline: 3.5px solid #55c4ae;
+  outline: 3.5px solid #458c9e;
 }
 
 .messageInput {
@@ -215,13 +215,13 @@ inputs into 100% of parent div*/
 .messageInput:focus {
   transition: outline 0.4s ease-in;
   -webkit-transition: all 0.4s ease;
-  outline: 3.5px solid #55c4ae;
+  outline: 3.5px solid #458c9e;
 }
 .sendButton {
   margin-bottom: 20px;
   width: 120px;
   height: 40px;
-  border: solid #55c4ae;
+  border: solid #458c9e;
   border-radius: 11px;
   border-width: 2px;
   font-size: 1.1rem;
@@ -233,6 +233,6 @@ inputs into 100% of parent div*/
 }
 
 .sendButton:hover {
-  background-color: #55c4ae;
+  background-color: #458c9e;
   -webkit-appearance: none;
 }

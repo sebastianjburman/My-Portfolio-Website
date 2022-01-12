@@ -11,7 +11,7 @@ function Home(props) {
             <img className="sebastianImage" alt="photoOfSebastian" src={sebastianImage}></img>
             <h1>Sebastian Burman</h1>
             <div className="viewWorkResumeButtonContainer">
-                <button onClick={() => props.setView("portfolio")}>View My Work</button>
+                <button onClick={() => window.location.href = "./portfolio"}>View My Work</button>
                 <a className="resumeLink" href={resume} target="Resumé">Resumé</a>
             </div>
             <div className="iconContainer">

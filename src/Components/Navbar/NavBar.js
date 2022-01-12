@@ -6,50 +6,34 @@ import deleteDropDownIcon from "../../Svgs/delete.svg"
 
 
 function NavBar(props) {
-
-    //Hover topnav button based on what page user is on
-    const hoverViewBackGround = (currentView, pageState) => {
-        let color = (currentView === pageState) ? "#55C4AE" :"transparent"
-        return color
+    //Changes button class based on which pass user is on
+    function highlightBasedOnPage(buttonPage) {
+        const currentPage = window.location.pathname.substring(1);
+        if (currentPage === buttonPage) {
+            return "navBarButtonHighlighted"
+        }
+        else {
+            return "navBarButton"
+        }
     }
-    //Change topnav button color based what page user is on
-    const hoverViewColor = (currentView, pageState) => {
-        let color = (currentView === pageState) ? "white" : "white"
-        return color
-    }
-    
 
     return (
-        <div className = "NavBarDiv">
-            <img  className="nameLogo" src={nameLogo} alt = "Navbar Logo" onClick={() => { props.setView("home") }}></img>
-            <button className = "homeButton" onClick={() => { props.setView("home") }} 
-                style={{ color: hoverViewColor(props.view, "home"), 
-                backgroundColor: hoverViewBackGround(props.view, "home")}}>Home
-            </button>
+        <div className="NavBarDiv">
+            <img className="nameLogo" src={nameLogo} alt="Navbar Logo" onClick={() => window.location.href = "./home"}></img>
+            <button className={highlightBasedOnPage("home")} onClick={() => window.location.href = "./home"}>Home</button>
 
-            <button className = "portfolioButton"onClick={() => { props.setView("portfolio") }} 
-                style={{ color: hoverViewColor(props.view, "portfolio"),
-                backgroundColor: hoverViewBackGround(props.view, "portfolio")
-            }} >Portfolio</button>
+            <button className={highlightBasedOnPage("portfolio")} onClick={() => window.location.href = "./portfolio"}>Portfolio</button>
 
-            <button className="aboutMeButton" onClick={() => { props.setView("aboutme") }}
-                style={{
-                    color: hoverViewColor(props.view, "aboutme"),
-                    backgroundColor: hoverViewBackGround(props.view, "aboutme")
-                }} >About Me</button>
+            <button className={highlightBasedOnPage("aboutme")} onClick={() => window.location.href = "./aboutme"}>About Me</button>
 
-            <button className="contactButton" onClick={() => { props.setView("contact") }}
-                style={{
-                    color: hoverViewColor(props.view, "contact"),
-                    backgroundColor: hoverViewBackGround(props.view, "contact")
-                }} >Contact</button>
-                
-            <button className = "menuLogo" onClick = {()=>props.activateDropDown()}>
+            <button className={highlightBasedOnPage("contact")} onClick={() => window.location.href = "./contact"}>Contact</button>
+
+            <button className="menuLogo" onClick={() => props.activateDropDown()}>
                 {/*Based on dropdown menu state prop the icon changes*/}
-                {(props.dropDown === true) ? <img alt = "deleteIcon" src={deleteDropDownIcon} 
-                className= "dropDownIconImage"></img>
-                    : <img src={dropDownSvg} className="dropDownIconImage" alt = "dropDownIcon"></img>}
-            </button>    
+                {(props.dropDown === true) ? <img alt="deleteIcon" src={deleteDropDownIcon}
+                    className="dropDownIconImage"></img>
+                    : <img src={dropDownSvg} className="dropDownIconImage" alt="dropDownIcon"></img>}
+            </button>
         </div>
     );
 }

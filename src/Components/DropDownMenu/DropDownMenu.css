@@ -1,68 +1,66 @@
-.dropDownMenuContainer{
-    position: absolute;
-    width: 100%;
-    height: 250px;
-    background-color: #3f7696;  
-    z-index: 1000;
-    font-size: 100%;
-    
-    /* Bring drop down menu in from top of screen*/
-	animation-name: dropDown;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: .5s;
+.dropDownMenuContainer {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  background-color: #23444e;
+  z-index: 1000;
+  font-size: 100%;
+
+  /* Bring drop down menu in from top of screen*/
+  animation-name: dropDown;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
 }
 
 /* Bring drop down menu in from top of screen*/
 @keyframes dropDown {
-	0% {
-		height: 0px;
-        pointer-events: none;
-	}
-	100% {
-		height: 250px;
-        pointer-events: all;
-	}
+  0% {
+    height: 0px;
+    pointer-events: none;
+  }
+  100% {
+    height: 250px;
+    pointer-events: all;
+  }
 }
 
+.dropDownMenuContainer button {
+  width: 100%;
+  height: 62.5px;
+  border: #121d31;
+  text-align: center;
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  opacity: 1;
 
-.dropDownMenuContainer button{
-    width: 100%;
-    height: 62.5px;
-    border:#121D31;
-    text-align: center;
-    background-color: transparent;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: white;
-    opacity: 1;
-
-    /* Fade in drop down menu buttons when dropdown menu 
+  /* Fade in drop down menu buttons when dropdown menu 
     comes in from top of screen*/
-    animation-name: fadeInButton;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
+  animation-name: fadeInButton;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
 }
-    /* Fade in drop down menu buttons when dropdown menu 
+/* Fade in drop down menu buttons when dropdown menu 
     comes in from top of screen*/
 @keyframes fadeInButton {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
-.dropDownMenuContainer button:hover{
-    background-color: #55C4AE
+.dropDownMenuContainer button:hover {
+  background-color: #356e80;
 }
 
 /* Hide drop down menu if open when width is over 711px*/
 @media only screen and (min-width: 711px) {
-  .dropDownMenuContainer{
-      display: none;
+  .dropDownMenuContainer {
+    display: none;
   }
 }

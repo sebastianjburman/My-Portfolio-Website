@@ -3,18 +3,26 @@ import "./DropDownMenu.css"
 
 function DropDownMenu(props) {
     return (
-        <div className = "dropDownMenuContainer">
-            <button onClick={() => { props.setView("home") 
-                props.setDropDown(false)}}>Home</button>
+        <div className="dropDownMenuContainer">
+            <button onClick={() => {
+                window.location.href = "./home"
+                props.setDropDown(false)
+            }}>Home</button>
 
-            <button onClick={() => { props.setView("portfolio") 
-                props.setDropDown(false)}}>Portfolio</button>
+            <button onClick={() => {
+                window.location.href = "./portfolio"
+                props.setDropDown(false)
+            }}>Portfolio</button>
 
-            <button onClick={() => { props.setView("aboutme") 
-                props.setDropDown(false) }}>About Me</button>
-                
-            <button onClick={() => { props.setView("contact") 
-                props.setDropDown(false)}}>Contact</button>
+            <button onClick={() => {
+                window.location.href = "./aboutme"
+                props.setDropDown(false)
+            }}>About Me</button>
+
+            <button onClick={() => {
+                window.location.href = "./contact"
+                props.setDropDown(false)
+            }}>Contact</button>
         </div>
     );
 }
