@@ -12,7 +12,7 @@ function NavBar(props) {
     //Changes button class based on which pass user is on
     function highlightBasedOnPage(buttonPage) {
         const currentPage = window.location.pathname.substring(1);
-        if (currentPage === buttonPage) {
+        if (currentPage === buttonPage || (currentPage === "" && buttonPage === "home")) {
             return "navBarButtonHighlighted"
         }
         else {
