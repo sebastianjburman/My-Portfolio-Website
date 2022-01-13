@@ -1,26 +1,29 @@
 import React from 'react';
 import "./DropDownMenu.css"
+import { useNavigate } from 'react-router';
+
 
 function DropDownMenu(props) {
+    const navigate = useNavigate();
     return (
         <div className="dropDownMenuContainer">
             <button onClick={() => {
-                window.location.href = "./home"
+                navigate("../home")
                 props.setDropDown(false)
             }}>Home</button>
 
             <button onClick={() => {
-                window.location.href = "./portfolio"
+                navigate("../portfolio")
                 props.setDropDown(false)
             }}>Portfolio</button>
 
             <button onClick={() => {
-                window.location.href = "./aboutme"
+                navigate("../aboutme")
                 props.setDropDown(false)
             }}>About Me</button>
 
             <button onClick={() => {
-                window.location.href = "./contact"
+                navigate("../contact")
                 props.setDropDown(false)
             }}>Contact</button>
         </div>

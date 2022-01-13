@@ -3,9 +3,12 @@ import "./NavBar.css"
 import nameLogo from "../../Images/nameLogo.png"
 import dropDownSvg from "../../Svgs/dropDown.svg"
 import deleteDropDownIcon from "../../Svgs/delete.svg"
+import { useNavigate } from 'react-router';
 
 
 function NavBar(props) {
+    const navigate = useNavigate();
+
     //Changes button class based on which pass user is on
     function highlightBasedOnPage(buttonPage) {
         const currentPage = window.location.pathname.substring(1);
@@ -19,14 +22,14 @@ function NavBar(props) {
 
     return (
         <div className="NavBarDiv">
-            <img className="nameLogo" src={nameLogo} alt="Navbar Logo" onClick={() => window.location.href = "./home"}></img>
-            <button className={highlightBasedOnPage("home")} onClick={() => window.location.href = "./home"}>Home</button>
+            <img className="nameLogo" src={nameLogo} alt="Navbar Logo" onClick={() => navigate("../home")}></img>
+            <button className={highlightBasedOnPage("home")} onClick={() => navigate("../home")}>Home</button>
 
-            <button className={highlightBasedOnPage("portfolio")} onClick={() => window.location.href = "./portfolio"}>Portfolio</button>
+            <button className={highlightBasedOnPage("portfolio")} onClick={() => navigate("../portfolio")}>Portfolio</button>
 
-            <button className={highlightBasedOnPage("aboutme")} onClick={() => window.location.href = "./aboutme"}>About Me</button>
+            <button className={highlightBasedOnPage("aboutme")} onClick={() => navigate("../aboutme")}>About Me</button>
 
-            <button className={highlightBasedOnPage("contact")} onClick={() => window.location.href = "./contact"}>Contact</button>
+            <button className={highlightBasedOnPage("contact")} onClick={() => navigate("../contact")}>Contact</button>
 
             <button className="menuLogo" onClick={() => props.activateDropDown()}>
                 {/*Based on dropdown menu state prop the icon changes*/}

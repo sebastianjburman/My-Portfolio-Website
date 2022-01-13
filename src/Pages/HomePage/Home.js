@@ -3,15 +3,16 @@ import "./Home.css"
 import sebastianImage from "../../Images/sebastian.png"
 import ProjectCard from "../../Components/ProjectCard/ProjectCard"
 import resume from "../../Resume.pdf"
-
+import { useNavigate } from 'react-router';
 
 function Home(props) {
+    const navigate = useNavigate();
     return (
         <div className="homeDiv">
             <img className="sebastianImage" alt="photoOfSebastian" src={sebastianImage}></img>
             <h1>Sebastian Burman</h1>
             <div className="viewWorkResumeButtonContainer">
-                <button onClick={() => window.location.href = "./portfolio"}>View My Work</button>
+                <button onClick={() => navigate("../portfolio")}>View My Work</button>
                 <a className="resumeLink" href={resume} target="Resumé">Resumé</a>
             </div>
             <div className="iconContainer">
